@@ -1,0 +1,23 @@
+.quality
+  & .container
+    background-image: url(../img/house_bg.svg)
+    background-size: 50%
+    background-position: 0 100%
+  &__inner
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-areas: 'desc1 image .''.image desc2''.desc3 desc3'
+    gap: 20px 80px
+  &__image
+    grid-area: image
+  &__description
+    &_1
+      grid-area: desc1
+    &_2
+      grid-area: desc2
+    &_3
+      grid-area: desc3
+      max-width: 500px
+      justify-self: flex-end
+    & strong
+      margin-bottom: 15px

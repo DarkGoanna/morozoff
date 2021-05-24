@@ -1,0 +1,75 @@
+@media screen and ( max-width: 580px )
+  main > section:first-of-type
+    padding-top: 90px
+  .header
+    height: 60px
+    & .menu
+      &__burger
+        top: calc((60px / 2) - (20px / 2))
+      &__list
+        top: 60px
+    &.background
+      & .menu__burger
+        top: calc((60px / 2) - (20px / 2))
+    & .logo
+      & svg
+        width: 45px
+        height: 45px
+    &.background
+      height: 60px
+      & .logo
+        & svg
+          width: 45px
+          height: 45px
+      & .menu
+        &__list
+          top: 60px
+  .intro
+    &__image
+      max-width: 80%
+    &__description
+      padding-top: 30px
+    &__text
+      margin-top: 20px
+  .title-1, h1
+    font-size: 30px
+  .about
+    & img,
+    & source
+      max-height: 300px
+  .advantages
+    &__inner
+      grid-template-columns: 100%
+    &__card
+      max-width: 80%
+  .services
+    &__inner
+      grid-template-columns: 100%
+    &__card
+      padding: 120px 10px 30px 30px
+  .info
+    &__inner
+      grid-template-areas: 'img''lt''rt''lc''rc''lb''rb'
+      grid-template-columns: 100%
+    &__image
+      & img
+        max-width: 200px
+        position: relative
+        top: auto
+        transform: translateX(-50%)
+    &__card
+      position: relative
+      min-height: 154px
+      padding: 30px
+      border-radius: 30px
+      & svg
+        position: absolute
+        top: 50%
+      &:nth-of-type(n)
+        background: linear-gradient(90.22deg, rgba(255, 255, 255, 0.8) 0.22%, rgba(196, 196, 196, 0.8) 91.68%)
+  .reviews
+    &__inner
+      grid-template-columns: 100%
+    &__card
+      max-width: 80%
+      margin: auto

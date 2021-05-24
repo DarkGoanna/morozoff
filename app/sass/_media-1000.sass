@@ -1,0 +1,59 @@
+@media screen and ( max-width: 1000px )
+  .menu
+    &__burger
+      display: flex
+    &__list
+      position: fixed
+      top: 100px
+      right: -100%
+      flex-direction: column
+      align-items: flex-end
+      padding: 15px
+      padding-right: 0
+      border-top-left-radius: 15%
+      border-bottom-left-radius: 15%
+      background: $main
+      transition: .2s
+      & li
+        padding: 7px 0
+        & a
+          color: $light
+        &:last-child
+          margin-right: 15px
+    &.open
+      .menu__list
+        right: 0
+        transition: .2s
+  .header
+    &.background
+      & .menu__list
+        top: 90px
+        transition: .2s
+        border-top-left-radius: 0
+    & .container
+      padding-right: 60px
+  .about
+    &__description
+      padding: 60px 0 60px 30px
+  .quality
+    & .container
+      background-size: 35%
+    &__image
+      & img
+        max-width: 300px
+  .services
+    &__inner
+      gap: 40px
+    &__card
+      padding: 120px 10px 30px 30px
+  .info
+    &__inner
+      grid-template-columns: 1fr 200px 1fr
+      gap: 25px
+  .promotions
+    &__descriptions
+      padding: 30px
+      left: 0
+  .reviews
+    &__inner
+      grid-template-columns: repeat(2, 1fr )

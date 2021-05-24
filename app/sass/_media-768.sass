@@ -1,0 +1,57 @@
+@media screen and ( max-width: 768px )
+  .intro
+    &__inner
+      grid-template-columns: 100%
+    &__image
+      order: -1
+      max-width: 400px
+      margin: 0 auto
+      display: inline-block
+    &__description
+      padding-top: 50px
+  .title-1, h1
+    font-size: 36px
+  .about
+    &__inner
+      grid-template-columns: 100%
+      padding-top: 15px
+    &__image
+      position: static
+      left: auto
+      & img,
+      & source
+        object-position: center top
+        height: auto
+        width: 100%
+        max-height: 400px
+    &__description
+      padding: 30px 0
+  .quality
+    & .container
+      background-image: none
+    &__inner
+      grid-template-columns: 100%
+      grid-template-areas: 'image''desc1''desc2''desc3'
+    &__image
+      display: flex
+      justify-content: center
+    &__description
+      &_3
+        max-width: 100%
+  .info
+    &__inner
+      grid-template-areas: 'img img''lt rt''lc rc''lb rb'
+      grid-template-columns: 1fr 1fr
+    &__image
+      & img
+        max-width: 200px
+        position: relative
+        top: auto
+        transform: translateX(-50%)
+  .promotions
+    &__card
+      flex-direction: column
+    &__image
+      max-height: 250px
+      width: 100%
+      max-width: 100%

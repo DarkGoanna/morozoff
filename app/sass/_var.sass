@@ -1,0 +1,113 @@
+@font-face
+    font-family: 'Roboto'
+    src: url('../font/Roboto-Bold.woff2') format('woff2'), url('../font/Roboto-Bold.woff') format('woff')
+    font-weight: 700
+    font-style: normal
+    font-display: swap
+
+@font-face
+    font-family: 'Roboto'
+    src: url('../font/Roboto-Regular.woff2') format('woff2'), url('../font/Roboto-Regular.woff') format('woff')
+    font-weight: 400
+    font-style: normal
+    font-display: swap
+
+$main: linear-gradient(96.91deg, #00A3FF 0.89%, #8F00FF 103.5%)
+$dark: #394855
+$light: #fff
+$bg: #EAF9FF
+
+.title-1, h1
+    font-weight: 400
+    font-size: 48px
+.btn__inner
+    font-weight: 400
+    font-size: 18px
+    line-height: 1.2
+    width: calc(100% - 2px)
+    height: calc(100% - 2px)
+    border-radius: 30px
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: .2s
+    border: none
+    position: absolute
+    top: 1px
+    left: 1px
+    cursor: pointer
+.btn
+    width: 278px
+    height: 52px
+    position: relative
+    background: transparent
+    border-radius: 30px
+    transition: .2s
+    &__inner
+        background: $main
+        color: #fff
+    &:hover
+        background: $main
+        transition: .2s
+        & .btn__inner
+            background: #fff
+            color: $dark
+            transition: .2s
+
+    &_white
+        background: $main
+        & .btn__inner
+            background: $light
+            color: $dark
+        &:hover
+            background: $main
+            transition: .2s
+            & .btn__inner
+                background: $main
+                color: $light
+                transition: .2s
+
+.container
+    max-width: 1230px + (2 * 15px)
+    padding: 0 15px
+    margin: 0 auto
+.clearfix::after
+    content: ''
+    display: block
+    clear: both
+.alignright
+    float: right
+    margin-left: 50px
+    margin-bottom: 25px
+.alignleft
+    float: left
+    margin-right: 50px
+    margin-bottom: 25px
+
+.scrollOff
+    overflow-y: hidden
+
+.underline
+    position: relative
+    padding-bottom: 25px
+    &::before
+        content: ''
+        width: 183px
+        height: 1px
+        background: $light
+        position: absolute
+        bottom: 0
+    &_colored
+        &::before
+            background: $main
+    &_center
+        &::before
+            left: 50%
+            transform: translateX(-50%)
+    &_left
+        &::before
+            left: 0
+.bg
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat

@@ -1,0 +1,43 @@
+.promotions
+  & .promotions__card
+    display: flex
+    align-items: center
+    border: 1px solid #C6CEFF
+  &__descriptions
+    padding: 50px 100px
+    background: $light
+    position: relative
+    left: -70px
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08)
+  &__arrow
+    width: 40px
+    height: 10px
+    position: absolute
+    bottom: 50px
+    left: 55%
+    border: none
+    background: transparent
+    z-index: 2
+    cursor: pointer
+    &::before
+      content: ''
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+      background: url(../img/Arrow_btn.svg)
+      background-size: contain
+      background-repeat: no-repeat
+      background-position: center
+    &_left
+      &::before
+        transform: rotate(180deg)
+    &_right
+      left: calc( 60% + 30px )
+  &__csrd-title
+    padding-left: 50px
+    font-weight: 700
+    margin-bottom: 15px
+  &__btn
+    margin-top: 45px

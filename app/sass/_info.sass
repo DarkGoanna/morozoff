@@ -1,0 +1,61 @@
+.info
+  background-color: #88A8C1
+  background-attachment: fixed
+  background-image: url(../img/info_bg.jpg)
+  background-image: url(../img/info_bg.webp)
+  &__inner
+    display: grid
+    grid-template-columns: 1fr 308px 1fr
+    gap: 50px 125px
+    grid-template-areas: 'lt .rt''lc img rc''lb .rb'
+  &__image
+    grid-area: img
+    position: relative
+    & img
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 100%
+  &__card
+    position: relative
+    min-height: 154px
+    padding: 30px
+    border-radius: 30px
+    & svg
+      position: absolute
+      top: 50%
+    &:nth-of-type(odd)
+      background: linear-gradient(90.22deg, rgba(255, 255, 255, 0.71) 0.22%, rgba(196, 196, 196, 0) 91.68%)
+      & svg
+        left: -178px
+    &:nth-of-type(even)
+      background: linear-gradient(-90.22deg, rgba(255, 255, 255, 0.71) 0.22%, rgba(196, 196, 196, 0) 91.68%)
+      & svg
+        right: -178px
+    &_lt
+      grid-area: lt
+      & svg
+        transform: translateY(-35px)
+    &_lc
+      grid-area: lc
+      & svg
+        right: -230px!important
+        transform: translateY(-50%)
+    &_lb
+      grid-area: lb
+      & svg
+        transform: translateY(-105px)
+    &_rt
+      grid-area: rt
+      & svg
+        transform: translateY(-35px)
+    &_rc
+      grid-area: rc
+      & svg
+        left: -230px!important
+        transform: translateY(-50%)
+    &_rb
+      grid-area: rb
+      & svg
+        transform: translateY(-105px)
