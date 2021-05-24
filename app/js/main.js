@@ -34,7 +34,7 @@ burger.addEventListener('click', () => {
 // our products
 $('.products__inner').slick({
     rows: 2,
-    dots: false,
+    dots: true,
     arrows: false,
     infinite: true,
     speed: 300,
