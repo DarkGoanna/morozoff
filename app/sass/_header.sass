@@ -54,10 +54,15 @@
     cursor: pointer
     position: relative
     &:hover
-      // color: $header
       transition: .2s
     &:not(:last-child)
       margin-right: 15px
+    & a
+      transform: translateY(0)
+      transition: .2s
+      &:hover
+        transform: translateY(-3px)
+        transition: .2s
 .languages
   position: relative
   z-index: 2
@@ -70,6 +75,11 @@
       list-style: none
       &:not(:last-child)
         margin-right: 15px
+        transform: translateY(0)
+        transition: .2s
+        &:hover
+          transform: translateY(-3px)
+          transition: .2s
   &__burger
     display: none
     width: 30px

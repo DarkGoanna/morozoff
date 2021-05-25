@@ -60,11 +60,11 @@
         <div class="menu__list">
           <li><a href="#intro">Главная</a></li>
           <li><a href="#about">О нас</a></li>
-          <li><a href="#">Услуги</a></li>
-          <li><a href="#">Как мы работаем</a></li>
-          <li><a href="#">Наши работы</a></li>
-          <li><a href="#">Отзывы</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#promotions">Как мы работаем</a></li>
+          <li><a href="#products">Наши работы</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
         </div>
         <div class="menu__burger">
           <span></span>
@@ -86,6 +86,7 @@
         RU/EN
       </div>
     </div>
+    <button class="call-popup fixed-btn"></button>
   </header>
   <main>
     <section class="intro bg" id="intro">
@@ -209,7 +210,7 @@
       </div>
     </section>
 
-    <section class="services bg">
+    <section class="services bg" id="services">
       <div class="container">
         <div class="services__title title-1 underline underline_center">Услуги</div>
         <div class="services__inner">
@@ -365,67 +366,68 @@
       </div>
     </section>
 
-    <section class="products">
+    <section class="products" id="products">
       <div class="container">
         <div class="products__title title-1">Наши работы</div>
+        <div class="products__inner">
+          <!-- 1 -->
+          <picture>
+            <source srcset="img/our-work.webp" type="image/webp">
+            <img src="img/our-work.jpg">
+          </picture>
+          <!-- 2 -->
+          <picture>
+            <source srcset="img/our-work.webp" type="image/webp">
+            <img src="img/our-work.jpg">
+          </picture>
+          <!-- 3 -->
+          <picture>
+            <source srcset="img/our-work.webp" type="image/webp">
+            <img src="img/our-work.jpg">
+          </picture>
+          <!-- 4 -->
+          <picture>
+            <source srcset="img/our-work.webp" type="image/webp">
+            <img src="img/our-work.jpg">
+          </picture>
+          <!-- 5 -->
+          <picture>
+            <source srcset="img/our-work.webp" type="image/webp">
+            <img src="img/our-work.jpg">
+          </picture>
+          <!-- 6 -->
+          <picture>
+            <source srcset="img/our-work.webp" type="image/webp">
+            <img src="img/our-work.jpg">
+          </picture>
+          <!-- 7 -->
+          <picture>
+            <source srcset="img/our-work.webp" type="image/webp">
+            <img src="img/our-work.jpg">
+          </picture>
+          <!-- 8 -->
+          <picture>
+            <source srcset="img/our-work.webp" type="image/webp">
+            <img src="img/our-work.jpg">
+          </picture>
+          <!-- 9 -->
+          <picture>
+            <source srcset="img/our-work.webp" type="image/webp">
+            <img src="img/our-work.jpg">
+          </picture>
+          <!-- 10 -->
+          <picture>
+            <source srcset="img/our-work.webp" type="image/webp">
+            <img src="img/our-work.jpg">
+          </picture>
+        </div>
       </div>
-      <div class="products__inner">
-        <!-- 1 -->
-        <picture>
-          <source srcset="img/our-work.webp" type="image/webp">
-          <img src="img/our-work.jpg">
-        </picture>
-        <!-- 2 -->
-        <picture>
-          <source srcset="img/our-work.webp" type="image/webp">
-          <img src="img/our-work.jpg">
-        </picture>
-        <!-- 3 -->
-        <picture>
-          <source srcset="img/our-work.webp" type="image/webp">
-          <img src="img/our-work.jpg">
-        </picture>
-        <!-- 4 -->
-        <picture>
-          <source srcset="img/our-work.webp" type="image/webp">
-          <img src="img/our-work.jpg">
-        </picture>
-        <!-- 5 -->
-        <picture>
-          <source srcset="img/our-work.webp" type="image/webp">
-          <img src="img/our-work.jpg">
-        </picture>
-        <!-- 6 -->
-        <picture>
-          <source srcset="img/our-work.webp" type="image/webp">
-          <img src="img/our-work.jpg">
-        </picture>
-        <!-- 7 -->
-        <picture>
-          <source srcset="img/our-work.webp" type="image/webp">
-          <img src="img/our-work.jpg">
-        </picture>
-        <!-- 8 -->
-        <picture>
-          <source srcset="img/our-work.webp" type="image/webp">
-          <img src="img/our-work.jpg">
-        </picture>
-        <!-- 9 -->
-        <picture>
-          <source srcset="img/our-work.webp" type="image/webp">
-          <img src="img/our-work.jpg">
-        </picture>
-        <!-- 10 -->
-        <picture>
-          <source srcset="img/our-work.webp" type="image/webp">
-          <img src="img/our-work.jpg">
-        </picture>
-      </div>
+
     </section>
 
-    <section class="promotions">
+    <section class="promotions" id="promotions">
       <div class="container">
-        <div class="promotions__title title-1"></div>
+        <div class="promotions__title title-1">Акции</div>
         <div class="promotions__inner">
           <!-- 1 -->
           <div class="promotions__card">
@@ -469,7 +471,7 @@
       </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews" id="reviews">
       <div class="container">
         <div class="reviews__title title-1">Отзывы</div>
         <div class="reviews__inner">
@@ -512,7 +514,9 @@
     <section class="callback">
       <div class="container">
         <div class="callback__title title-1 underline underline_colored underline_center">
-          У Вас остались вопросы? Задайте их нам
+          У Вас остались вопросы?
+          <br>
+          Задайте их нам
         </div>
         <div class="callback__subtitle">
           Оставьте свои контактные данные и наш менеджер свяжется с вамию
@@ -523,12 +527,18 @@
       </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="container">
-        <div class="contacts__title title-1"></div>
+        <div class="contacts__title title-1">Наши контакты</div>
         <div class="contacts__inner">
-          <div class="contacts__text"></div>
-          <div class="contacts__text"></div>
+          <div class="contacts__text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+            officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </div>
+          <div class="contacts__text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+            velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </div>
         </div>
         <ul class="contacts__socials">
           <li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
@@ -539,8 +549,59 @@
         </ul>
       </div>
     </section>
-  </main>
 
+    <section class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.52145693383!2d30.739996915843893!3d46.47798607324512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6319c15774113%3A0x7bb68833f263dec6!2z0YPQu9C40YbQsCDQn9GD0YjQutC40L3RgdC60LDRjywg0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1621921920335!5m2!1sru!2sua"
+        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <nav class="footer__menu">
+          <div class="ul footer__list">
+            <li><a href="#intro">Главная</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#promotions">Как мы работаем</a></li>
+            <li><a href="#products">Наши работы</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </div>
+        </nav>
+        <div class="footer__contacts">
+          <div class="footer__address">
+            <div class="footer__text">Наши контакты</div>
+            <div class="footer__text">г.Одесса, ул. Пушкинская</div>
+          </div>
+          <div class="footer__phone">
+            <div class="footer__text">Телефон</div>
+            <a href="tel:(067)895 84 83">(067)895 84 83</a>
+          </div>
+          <div class="footer__email">
+            <div class="footer__text">E-mail</div>
+            <a href="mailto:erutyrtyrtuti@gmail.com">erutyrtyrtuti@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- popup -->
+  <div class="popup-wrapper">
+    <div class="popup">
+      <button type="button" class="popup__close"></button>
+      <div class="popup__title">Заполни форму</div>
+      <div class="popup__inner">
+        <input type="text" placeholder="Имя">
+        <input type="text" placeholder="Телефон">
+        <div class="popup__btn btn btn_white">
+          <button class="btn__inner">Отправить</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="js/aos.min.js"></script>
   <script src="js/jquery.min.js"></script>
