@@ -1,0 +1,46 @@
+.footer
+  background-attachment: fixed
+  background-image: url(../img/services_waves.svg)
+  background-image: url(../img/services_waves.svg), $main
+  background-repeat: no-repeat
+  background-position: center
+  color: $light
+  padding: 50px 0
+  &__inner
+    max-width: 845px
+    width: 100%
+    margin: 0 auto
+  &__menu
+    padding-bottom: 20px
+    border-bottom: 1px solid #FFFFFF
+  &__list
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 15px
+    & li
+      list-style: none
+      transform: translateY(0)
+      transition: .2s
+      &:hover
+        transform: translateY(-3px)
+        transition: .2s
+  &__contacts
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-top: 35px
+  &__address,
+  &__phone,
+  &__email
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 15px
+  &__phone a,
+  &__email a
+    transform: translateY(0)
+    transition: .2s
+    &:hover
+      transform: translateY(-3px)
+      transition: .2s

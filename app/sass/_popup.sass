@@ -1,0 +1,68 @@
+.popup-wrapper
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: rgba(#fff, .8)
+  z-index: 999
+  opacity: 0
+  visibility: hidden
+  transition: .2s
+  &.open
+    opacity: 1
+    visibility: visible
+    transition: .2s
+.popup
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  background: $main
+  color: $light
+  padding: 80px 40px
+  -webkit-box-shadow: 10px 10px 78px 0px rgba(34, 60, 80, 0.2), -10px -10px 78px 0px rgba(34, 60, 80, 0.2)
+  -moz-box-shadow: 10px 10px 78px 0px rgba(34, 60, 80, 0.2), -10px -10px 78px 0px rgba(34, 60, 80, 0.2)
+  box-shadow: 10px 10px 78px 0px rgba(34, 60, 80, 0.2), -10px -10px 78px 0px rgba(34, 60, 80, 0.2)
+  border-radius: 10px
+  &__close
+    width: 30px
+    height: 30px
+    position: absolute
+    top: 10px
+    right: 10px
+    border: none
+    background: none
+    cursor: pointer
+    &::before,
+    &::after
+      content: ''
+      width: 100%
+      height: 1px
+      background: $light
+      position: absolute
+      top: 50%
+      left: 50%
+    &::before
+      transform: translate(-50%, -50%) rotate(45deg)
+    &::after
+      transform: translate(-50%, -50%) rotate(-45deg)
+  &__title
+    text-align: center
+    font-size: 30px
+    margin-bottom: 50px
+  & input
+    width: 100%
+    background: none
+    border: none
+    border-bottom: 2px solid $light
+    padding: 5px 10px
+    margin-bottom: 15px
+    &::placeholder
+      color: $light
+      font-size: 16px
+      font-weight: 400
+  &__btn
+    margin-top: 20px
+    &:hover
+      background: $light
